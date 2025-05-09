@@ -1,0 +1,7 @@
+version: "3"
+services:
+  react-app:
+    image: react-app:latest # Name of the image
+    ports:
+      - "8000:8000" # Map container's port 8000 to EC2's port 8000
+    restart: always # Restart the container if it crashes
